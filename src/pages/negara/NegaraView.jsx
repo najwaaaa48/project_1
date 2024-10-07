@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 export const NegaraView = ({ubahCari, cariNegara, hasilCari, hasilFilter}) => {
   return (
     <div>
-        <div className="flex flex-col justify-center pt-12 bg-cyan-100">
+        <div className="flex flex-col justify-center pt-12 bg-cyan-100 dark:bg-sky-800">
             <div className="flex justify-center">
-              <label className="input input-bordered flex items-center gap-2 mb-8 w-[500px] ">
+              <label className="input input-bordered flex items-center gap-2 mb-8 w-[500px] dark:bg-gray-700">
                 <input
                   type="text"
                   className="grow"
@@ -17,7 +17,7 @@ export const NegaraView = ({ubahCari, cariNegara, hasilCari, hasilFilter}) => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 16 16"
                   fill="currentColor"
-                  className="h-4 w-4 opacity-70"
+                  className="h-4 w-4 opacity-70 dark:text-white"
                 >
                   <path
                     fillRule="evenodd"
@@ -30,7 +30,7 @@ export const NegaraView = ({ubahCari, cariNegara, hasilCari, hasilFilter}) => {
     
             <div className="grid grid-cols-3 gap-3 pb-10">
               {hasilFilter?.map((data) => (
-                <div className="card bg-base-100 w-85 shadow-xl" key={data?.name}>
+                <div className="card bg-cyan-200 dark:bg-slate-400 w-85 shadow-xl" key={data?.name}>
                   <figure>
                     <img
                       src={data.flag}
@@ -41,7 +41,7 @@ export const NegaraView = ({ubahCari, cariNegara, hasilCari, hasilFilter}) => {
                     <h2 className="card-title font-bold">{data.name}</h2>
                     <p className="line-clamp-1 text-left">{data.currency}</p>
                     <div className="card-actions justify-end">
-                      <Link to={"/detailnegara/" + data.id} className="btn btn-info">
+                      <Link to={"/detailnegara/" + data.id} className="btn btn-info dark:bg-cyan-600">
                         Show More
                       </Link>
                     </div>

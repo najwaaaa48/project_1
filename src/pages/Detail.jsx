@@ -22,18 +22,18 @@ export default function Detail() {
     //   <img src={resto?.thumbnail} alt="" />
     //   <h1>{resto?.restaurant.name}</h1>
     // </div>
-    <div className="hero bg-cyan-100 min-h-screen ">
+    <div className="hero bg-cyan-100 dark:bg-sky-800 min-h-screen ">
     <div className="hero-content text-center space-y-8 flex-col">
       <img
         src={`https://restaurant-api.dicoding.dev/images/large/${resto?.restaurant.pictureId}`}
         className="max-w-sm rounded-lg shadow-2xl"
       />
       <div>
-        <h1 className="text-5xl font-bold">{resto?.restaurant?.name}</h1>
-        <p className="py-6 max-w-[50rem] text-justify">
+        <h1 className="text-5xl font-bold dark:text-white">{resto?.restaurant?.name}</h1>
+        <p className="py-6 max-w-[50rem] text-justify dark:text-white">
           {resto?.restaurant?.description}
         </p>
-        <button className="btn btn-info">Get Started</button>
+        <button className="btn btn-info dark:bg-slate-500">Get Started</button>
       </div>
     </div>
   </div>

@@ -5,7 +5,7 @@ import "./ProductView.scss";
 export default function ProductView({ products }) {
   try {
     return (
-      <div className="bg-cyan-100">
+      <div className="bg-cyan-100 dark:bg-sky-800">
         <div className="flex-col py-24">
           {/* <div className="pb-24 title-text">
             <h2 className="text-3xl text-center">Product</h2>

@@ -74,8 +74,8 @@ const Beranda = () => {
 
   return (
     <BerandaView
-      cariResto={cariResto}
-      hasilCari={state.filterData}
+      // cariResto={cariResto}
+      // hasilCari={state.filterData}
       hasilFilter={hasilFilter}
       ubahCari={ubahCari}
     />

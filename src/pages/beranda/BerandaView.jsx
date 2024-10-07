@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const BerandaView = ({ubahCari, cariResto, hasilCari, hasilFilter}) => {
+const BerandaView = ({ubahCari, hasilFilter}) => {
     return (
-        <div className="flex flex-col dark:bg-black">
+        <div className="flex flex-col">
           <div
             className="hero min-h-screen"
             style={{
@@ -20,16 +20,16 @@ const BerandaView = ({ubahCari, cariResto, hasilCari, hasilFilter}) => {
                   excepturi exercitationem quasi. In deleniti eaque aut repudiandae
                   et a id nisi.
                 </p>
-                <button className="btn btn-info">
+                <button className="btn btn-info dark:bg-gray-500">
                   <Link to="/detail/:id">Get Started</Link>
                 </button>
               </div>
             </div>
           </div>
     
-          <div className="flex flex-col justify-center pt-12 bg-cyan-100 dark:bg-black">
+          <div className="flex flex-col justify-center pt-12 bg-cyan-100 dark:bg-sky-800">
             <div className="flex justify-center">
-              <label className="input input-bordered flex items-center gap-2 mb-8 w-[500px] ">
+              <label className="input input-bordered flex items-center gap-2 mb-8 w-[500px] dark:bg-gray-700 ">
                 <input
                   type="text"
                   className="grow"
@@ -40,7 +40,7 @@ const BerandaView = ({ubahCari, cariResto, hasilCari, hasilFilter}) => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 16 16"
                   fill="currentColor"
-                  className="h-4 w-4 opacity-70"
+                  className="h-4 w-4 opacity-70 dark:text-white"
                 >
                   <path
                     fillRule="evenodd"
@@ -49,11 +49,11 @@ const BerandaView = ({ubahCari, cariResto, hasilCari, hasilFilter}) => {
                   />
                 </svg>
               </label>
-              <div className="">
+              {/* <div className="">
                 <p>
                   Hasil dari : {cariResto}, ditemukan : {hasilCari?.founded}
                 </p>
-              </div>
+              </div> */}
             </div>
     
             <div className="grid grid-cols-3 gap-3 pb-10">
@@ -69,7 +69,7 @@ const BerandaView = ({ubahCari, cariResto, hasilCari, hasilFilter}) => {
                     <h2 className="card-title">{data.name}</h2>
                     <p className="line-clamp-1">{data.description}</p>
                     <div className="card-actions justify-end">
-                      <Link to={"/detail/" + data.id} className="btn btn-info">
+                      <Link to={"/detail/" + data.id} className="btn btn-info dark:bg-cyan-600">
                         Show More
                       </Link>
                     </div>

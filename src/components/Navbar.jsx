@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="navbar bg-cyan-600 ">
+      <div className="navbar bg-cyan-400 dark:bg-sky-900">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -65,11 +65,11 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
+          <a className="btn btn-ghost text-xl dark:text-white">
             <Link to="/">Najwa</Link>
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex font-semibold dark:text-white">
           <ul className="menu menu-horizontal px-1">
             <li>
               <Link to="/beranda">Beranda</Link>
@@ -86,7 +86,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <label className="swap swap-rotate">
+          <label className="swap swap-rotate dark:text-white">
             {/* this hidden checkbox controls the state */}
             <input
               type="checkbox"

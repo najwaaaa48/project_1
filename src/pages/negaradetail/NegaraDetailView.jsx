@@ -4,7 +4,7 @@ export default function NegaraDetailView({ data }) {
     try {
       return (
 
-        <div className="Negara-detail-image bg-cyan-100">
+        <div className="Negara-detail-image bg-cyan-100 dark:bg-sky-800">
         <div className="container flex flex-col px-6 py-4 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
           <div className="flex flex-col items-center w-full lg:flex-row lg:w-1/2 px-24">
             <div className="max-w-lg lg:mx-12 lg:order-2 ">
@@ -20,7 +20,7 @@ export default function NegaraDetailView({ data }) {
                   {data?.population}
                 </p>
               <div className="mt-6">
-              <Link to="/negara"><button className="btn btn-info">Back</button></Link>
+              <Link to="/negara"><button className="btn btn-info dark:bg-slate-500">Back</button></Link>
               </div>
               </div>
             </div>

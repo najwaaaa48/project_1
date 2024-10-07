@@ -2,7 +2,7 @@ import React from "react";
 
 export const Profil = () => {
   return (
-    <div className="bg-cyan-100 dark:bg-black">
+    <div className="bg-cyan-100 dark:bg-sky-800">
       <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full">
           <img
